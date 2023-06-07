@@ -51,12 +51,15 @@ body {
     padding: 8px 0;
     border-bottom: 1px solid red;
 }
-
-.random-scheme {
-    cursor: pointer;
-    padding: 5px 10px;    
+.color-section {
+    min-height: 40vh;
 }
 
-.scheme-select-container{
-    padding: 10px 0;
+.color-section-container {
+    width: 100%;
+}
+
+#colors-container {
+    display: flex;
+    justify-content: center;
 }
