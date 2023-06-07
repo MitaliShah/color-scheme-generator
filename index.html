@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Scheme Generator</title>
+    <link rel="stylesheet" href="./css/styles.css" >
+</head>
+<body>
+    <header>
+        <h1>Color Scheme Generator</h1>
+    </header>
+    <main>
+        <div>
+            <!-- color picker input -->
+            <div class="color-picker-container">
+                <input type="color" id="color-picker" name="color-picker"
+                       value="#e66465">
+                <label for="color-picker">Select Color</label>
+            </div>
+            <!-- color scheme options -->
+            <div>
+                <label for="scheme-select">Choose a Color:</label>
+                <select name="scheme-select" id="scheme-select">
+                    <!-- Options will be rendered dynamically -->
+                </select>
+            </div>
+            <!-- Button to generate random color schemes -->
+            <div>
+                <button id="random-scheme" class="random-scheme">Random Scheme</button>
+            </div>
+        </div>
+        
+    </main>
+    <script src="./js/script.js"></script>
+</body>
+</html>
