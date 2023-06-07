@@ -99,6 +99,11 @@ body {
     margin-top: 5px;
 }
 
+.info-message {
+    text-align: center;
+    padding: 30px 10px;
+}
+
 @media(min-width: 37.5rem) {
     #colors-container {
         display: flex;
@@ -111,12 +116,6 @@ body {
         flex-direction: column;
         margin: 0;
         width: 100%;
-        /* display: flex;
-        flex-direction: row;
-        align-items: center; */
-        /* align-items: center; */
-        /* max-width: 90%;    
-        margin: 0 auto; */
     }
     
     .color-section {
@@ -124,11 +123,4 @@ body {
        height: 20rem;
        padding: 50%
     }
-    
-    /* .hex-value {
-        width: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
 }
