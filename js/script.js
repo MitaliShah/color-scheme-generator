@@ -57,6 +57,16 @@ function getColorValues() {
     selectedScheme = SchemeSelectEl.value
 }
 
+function randomColors() {
+     // get random color value
+     const color = Math.floor(Math.random()*16777215).toString(16);
+     selectedColorValue = color;
+     ColorPickerEl.value = `#${color}`
+     // loadColors will now load with updated random color value
+     loadColors()
+}
+
+RandomSchemeBtn.addEventListener("click", randomColors)
 SchemeSelectEl.addEventListener("change", loadColors)
 
 function copyToClip(color) {
