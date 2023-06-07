@@ -5,23 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color Scheme Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" >
 </head>
 <body>
     <header>
-        <h1>Color Scheme Generator</h1>
+        <h1 class="title">Color Scheme Generator</h1>
     </header>
     <main>
-        <div>
+        <div class="input-wrapper">
             <!-- color picker input -->
             <div class="color-picker-container">
                 <input type="color" id="color-picker" name="color-picker"
                        value="#e66465">
-                <label for="color-picker">Select Color</label>
+                <label for="color-picker" aria-label="Color Picker"></label>
             </div>
             <!-- color scheme options -->
-            <div>
-                <label for="scheme-select">Choose a Color:</label>
+            <div class="scheme-select-container">
+                <label for="scheme-select" aria-label="Choose a Color"></label>
                 <select name="scheme-select" id="scheme-select">
                     <!-- Options will be rendered dynamically -->
                 </select>
