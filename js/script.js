@@ -35,7 +35,6 @@ async function loadColors() {
 
 function renderColorsHtml(data){
     data.colors.map((color) => {
-        console.log(color)
         colorsArray.unshift(color.hex.value)        
     })
     
