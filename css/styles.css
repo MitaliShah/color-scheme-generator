@@ -53,7 +53,10 @@ body {
 }
 
 .random-scheme {
-    border: none;
     cursor: pointer;
     padding: 5px 10px;    
+}
+
+.scheme-select-container{
+    padding: 10px 0;
 }
