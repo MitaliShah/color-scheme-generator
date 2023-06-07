@@ -34,13 +34,31 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0 auto;
     min-height: 100vh;
-    border: 1px solid red;
+    /* Gradient resource https://larsenwork.com/easing-gradients/*/
+    background: linear-gradient(
+          to bottom,
+          hsl(228, 52.24%, 86.86%) 0%,
+          hsla(228.61, 51.28%, 86.91%, 0.998) 8.1%,
+          hsla(230.45, 48.56%, 87.02%, 0.993) 15.5%,
+          hsla(233.81, 44.26%, 87.2%, 0.985) 22.5%,
+          hsla(239.36, 38.55%, 87.42%, 0.975) 29%,
+          hsla(247.61, 34.6%, 87.11%, 0.964) 35.3%,
+          hsla(258.18, 30.72%, 86.69%, 0.951) 41.2%,
+          hsla(271.55, 26.84%, 86.26%, 0.937) 47.1%,
+          hsla(288.37, 23.09%, 85.81%, 0.923) 52.9%,
+          hsla(308.17, 23.42%, 85.81%, 0.909) 58.8%,
+          hsla(322.38, 29.11%, 86.41%, 0.896) 64.7%,
+          hsla(331.8, 34.64%, 86.94%, 0.885) 71%,
+          hsla(338.15, 39.66%, 87.39%, 0.875) 77.5%,
+          hsla(342.31, 43.77%, 87.74%, 0.867) 84.5%,
+          hsla(344.71, 46.54%, 87.96%, 0.862) 91.9%,
+          hsla(345.52, 47.54%, 88.04%, 0.86) 100%
+        );
 }
 
 .title {
     text-align: center;
     padding: 5px;
-    border-bottom: 1px solid red;
 }
 
 .input-wrapper {
@@ -49,7 +67,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 8px 0;
-    border-bottom: 1px solid red;
 }
 
 #colors-container {
@@ -61,6 +78,7 @@ body {
     align-items: center;
     max-width: 90%;    
     margin: 0 auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .color-section {
@@ -73,4 +91,44 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#message {
+    /* display: none; */
+    text-align: center;
+    margin-top: 5px;
+}
+
+@media(min-width: 37.5rem) {
+    #colors-container {
+        display: flex;
+        justify-content: center;
+        /* border: 1px solid red; */
+        max-width: 50rem;
+    }
+    .color-section-container {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        width: 100%;
+        /* display: flex;
+        flex-direction: row;
+        align-items: center; */
+        /* align-items: center; */
+        /* max-width: 90%;    
+        margin: 0 auto; */
+    }
+    
+    .color-section {
+       width: 100%;
+       height: 20rem;
+       padding: 50%
+    }
+    
+    /* .hex-value {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    } */
 }

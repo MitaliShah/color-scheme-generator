@@ -1,7 +1,8 @@
 const ColorPickerEl = document.querySelector("#color-picker");
 const SchemeSelectEl = document.querySelector("#scheme-select");
 const RandomSchemeBtn = document.querySelector("#random-scheme");
-const colorsContainerEl = document.querySelector("#colors-container")
+const colorsContainerEl = document.querySelector("#colors-container");
+const messageEl = document.querySelector("#message");
 const baseUrl = "https://www.thecolorapi.com"
 let selectedColorValue = ""
 let selectedScheme = ""
@@ -60,7 +61,11 @@ SchemeSelectEl.addEventListener("change", loadColors)
 
 function copyToClip(color) {
     navigator.clipboard.writeText(color)
-    alert(`Copied ${color} to clipboard!`)
+    messageEl.innerHTML=`${color} Copied`
+    messageEl.style.display='block'
+    setTimeout(()=>{
+        messageEl.style.display='none'
+    },1700)
 }
 
 render()
