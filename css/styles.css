@@ -51,15 +51,26 @@ body {
     padding: 8px 0;
     border-bottom: 1px solid red;
 }
-.color-section {
-    min-height: 40vh;
+
+#colors-container {
+    margin-top: 20px;
 }
 
 .color-section-container {
-    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 90%;    
+    margin: 0 auto;
 }
 
-#colors-container {
+.color-section {
+   width: 70%;
+   padding: 40px 0;
+}
+
+.hex-value {
+    width: 30%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }

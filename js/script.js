@@ -39,7 +39,7 @@ function renderColorsHtml(data){
     })
     
         let colorHTML = colorsArray.map((color) => `
-            <div class="color-section-container">
+            <div onclick="copyToClip('${color}')"  class="color-section-container">
                 <div class="color-section" style="background-color: ${color}"></div>
                 <p class="hex-value"> ${color}</p>
             </div> 
@@ -57,5 +57,10 @@ function getColorValues() {
 }
 
 SchemeSelectEl.addEventListener("change", loadColors)
+
+function copyToClip(color) {
+    navigator.clipboard.writeText(color)
+    alert(`Copied ${color} to clipboard!`)
+}
 
 render()
