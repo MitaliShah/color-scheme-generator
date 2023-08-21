@@ -1,8 +1,6 @@
 # Color Scheme Generator
 
-- This project is made with The Color API. Users can choose a color and a color scheme to generate a color palette.
-- Users can see the hex code below the color and copy the color by clicking anywhere on the color element.
-- Users can also click on random color button to see the color palette.
+With the color scheme generator, you can create your own color palette! It's a JavaScript web app that uses The Color API. You can start by selecting a color and a color scheme and then the app generates a palette for you. You can easily copy the hex code by clicking on the color element. And if you're feeling lucky, you can try the random color button to see what color palette it generates for you.
 
 ### Links
 
