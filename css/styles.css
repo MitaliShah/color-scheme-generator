@@ -28,37 +28,40 @@
     }
 
 body {
+    color: white;
     margin: 0;
     padding: 0;
     max-width: 37rem;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Karla', sans-serif;
     margin: 0 auto;
     min-height: 100vh;
-    /* Gradient resource https://larsenwork.com/easing-gradients/*/
-    background: linear-gradient(
-          to bottom,
-          hsl(228, 52.24%, 86.86%) 0%,
-          hsla(228.61, 51.28%, 86.91%, 0.998) 8.1%,
-          hsla(230.45, 48.56%, 87.02%, 0.993) 15.5%,
-          hsla(233.81, 44.26%, 87.2%, 0.985) 22.5%,
-          hsla(239.36, 38.55%, 87.42%, 0.975) 29%,
-          hsla(247.61, 34.6%, 87.11%, 0.964) 35.3%,
-          hsla(258.18, 30.72%, 86.69%, 0.951) 41.2%,
-          hsla(271.55, 26.84%, 86.26%, 0.937) 47.1%,
-          hsla(288.37, 23.09%, 85.81%, 0.923) 52.9%,
-          hsla(308.17, 23.42%, 85.81%, 0.909) 58.8%,
-          hsla(322.38, 29.11%, 86.41%, 0.896) 64.7%,
-          hsla(331.8, 34.64%, 86.94%, 0.885) 71%,
-          hsla(338.15, 39.66%, 87.39%, 0.875) 77.5%,
-          hsla(342.31, 43.77%, 87.74%, 0.867) 84.5%,
-          hsla(344.71, 46.54%, 87.96%, 0.862) 91.9%,
-          hsla(345.52, 47.54%, 88.04%, 0.86) 100%
-        );
-}
+    background-image: linear-gradient(
+        35deg,
+        hsl(137deg 77% 83%) 0%,
+        hsl(142deg 70% 82%) 16%,
+        hsl(146deg 64% 82%) 23%,
+        hsl(151deg 59% 81%) 29%,
+        hsl(157deg 54% 80%) 34%,
+        hsl(163deg 50% 79%) 39%,
+        hsl(170deg 46% 78%) 43%,
+        hsl(177deg 42% 77%) 48%,
+        hsl(185deg 44% 77%) 52%,
+        hsl(191deg 48% 77%) 57%,
+        hsl(196deg 52% 78%) 61%,
+        hsl(201deg 57% 78%) 66%,
+        hsl(205deg 61% 78%) 71%,
+        hsl(209deg 66% 78%) 77%,
+        hsl(212deg 71% 79%) 84%,
+        hsl(214deg 76% 79%) 100%
+    );
+    }
 
 .title {
     text-align: center;
     padding: 5px;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 2;
 }
 
 .input-wrapper {
@@ -69,8 +72,19 @@ body {
     padding: 8px 0;
 }
 
+#color-picker {
+    width: 4rem;
+    padding: 0;
+    border: none;
+    /* outline: 0.25px solid white; */
+    border-color: transparent;
+    outline: none;
+    border-radius: 5px;
+}
+
 #colors-container {
     margin-top: 20px;
+    box-shadow: 0px 15px 30px 0px rgba(0, 81, 171, 0.15);
 }
 
 .color-section-container {
@@ -84,6 +98,18 @@ body {
 .color-section {
    width: 70%;
    padding: 40px 0;
+}
+
+#scheme-select {
+    outline: none;
+    background: #fff;
+    border: none;
+    padding: 0.5rem;
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    line-height: 1.5;
+    margin-bottom: 1rem;
 }
 
 .hex-value {

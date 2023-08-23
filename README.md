@@ -7,6 +7,10 @@ With the color scheme generator, you can create your own color palette! It's a J
 - Solution URL: [https://github.com/MitaliShah/color-scheme-generator](https://github.com/MitaliShah/color-scheme-generator)
 - Live Site URL: [https://mitalishah.github.io/color-scheme-generator/](https://mitalishah.github.io/color-scheme-generator/)
 
+### Screenshot
+
+<!-- ![](./images/) -->
+
 ### Built with
 
 - HTML

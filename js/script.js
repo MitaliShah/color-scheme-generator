@@ -46,7 +46,7 @@ function renderColorsHtml(data){
         `        
         ).join('')
         colorsContainerEl.innerHTML = colorHTML
-        ColorPickerEl.value = "#e66465"
+        ColorPickerEl.value = "#191B3D"
         colorsArray = []
 }
 
