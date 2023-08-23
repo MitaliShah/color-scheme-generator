@@ -9,7 +9,8 @@ With the color scheme generator, you can create your own color palette! It's a J
 
 ### Screenshot
 
-<!-- ![](./images/) -->
+![](./images/mobile.png)
+![](./images/desktop.png)
 
 ### Built with
 
